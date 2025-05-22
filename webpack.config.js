@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin');
+const ExternalResourcesInlinePlugin = require('./plugins/ExternalResourcesInlinePlugin');
 
 class InlineAssetsPlugin {
   apply(compiler) {
@@ -129,6 +130,11 @@ module.exports = {
                     type: 'src',
                   },
                   {
+                    tag: 'gwd-image',
+                    attribute: 'source',
+                    type: 'src',
+                  },
+                  {
                     tag: 'img',
                     attribute: 'data-src',
                     type: 'src',
@@ -150,6 +156,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new ExternalResourcesInlinePlugin({}),
     new MiniCssExtractPlugin({
       filename: 'styles.[contenthash].css',
     }),
