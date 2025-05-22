@@ -5,6 +5,16 @@ import './styles/components.scss';
 // Import utilities
 import { formatMessage, addClickHandler } from './utils/helpers.js';
 
+import  "./utils/enabler.js";
+
+import  "./utils/gwd_webcomponents_v1_min.js";
+import  "./utils/gwdgooglead_min.js";
+import  "./utils/gwdimage_min.js";
+import  "./utils/gwdpage_min.js";
+import  "./utils/gwdpagedeck_min.js";
+
+
+
 // Import images (these will be inlined as base64)
 import logoImage from './assets/logo.png';
 

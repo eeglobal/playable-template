@@ -1,21 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
+<html stage-mask="">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Inline Bundle</title>
+  <meta charset="utf-8">
+  <meta name="generator" content="Google Web Designer 16.3.0.0407">
+  <meta name="template" content="Banner 3.0.0">
+  <meta name="environment" content="gwd-dv360">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      position: absolute;
+      transform-style: preserve-3d;
+    }
+    .gwd-page-content * {
+      transform-style: preserve-3d;
+    }
+    .gwd-page-wrapper {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      transform: translateZ(0px);
+    }
+    .gwd-page-size {
+      width: 720px;
+      height: 1280px;
+    }
+    .gwd-span-1hbg {
+      position: absolute;
+      text-align: center;
+      width: 398px;
+      height: 30px;
+      left: 162px;
+      top: 46px;
+    }
+    .gwd-span-k4q5 {
+      font-size: 21px;
+      line-height: 21px;
+      letter-spacing: 4px;
+      color: rgb(76, 53, 122);
+      top: 15px;
+    }
+    .gwd-span-17yz {
+      position: absolute;
+      width: 542px;
+      text-align: center;
+      font-family: "Playfair Display";
+      transform-origin: 50% 50% 0px;
+      height: 196px;
+      left: 89px;
+      top: 406px;
+      opacity: 0;
+    }
+    .gwd-span-8lp8 {
+      font-size: 75px;
+      line-height: 90px;
+      color: rgb(76, 53, 122);
+    }
+    .gwd-span-185q {
+      position: absolute;
+      text-align: center;
+      width: 720px;
+      font-family: "Wix Madefor Display";
+      height: 30px;
+      left: 2px;
+      top: 477px;
+      opacity: 0;
+    }
+    .gwd-span-1dkf {
+      font-size: 26px;
+    }
+    .gwd-p-15df {
+      font-weight: bold;
+    }
+    .gwd-p-qyog {
+      font-weight: bold;
+    }
+    .gwd-span-1h2b {
+      font-size: 18px;
+    }
+    .gwd-span-187u {
+      position: absolute;
+      text-align: center;
+      width: 720px;
+      font-family: "Wix Madefor Display";
+      height: 30px;
+      left: 2px;
+      top: 516px;
+      opacity: 0;
+    }
+    .gwd-span-1nn7 {
+      font-size: 25px;
+      color: rgb(76, 53, 122);
+    }
+    .gwd-span-nuwg {
+      color: rgb(76, 53, 122);
+    }
+    .gwd-image-1kpa {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 721px;
+      height: 1280px;
+    }
+    .gwd-image-jyoh {
+      position: absolute;
+      width: 633px;
+      height: 953px;
+      left: 87px;
+      top: 328px;
+      opacity: 0;
+    }
+    .gwd-image-1w0s {
+      position: absolute;
+      width: 154px;
+      height: 126px;
+      transform-origin: 50% 50% 0px;
+      transform: rotateZ(-91.24deg);
+      opacity: 0;
+      top: 562px;
+      left: 206px;
+    }
+    .gwd-image-1fdb {
+      position: absolute;
+      width: 391px;
+      height: 66px;
+      left: 166px;
+      top: 1304px;
+      mix-blend-mode: normal;
+    }
+    .gwd-span-33hk {
+      position: absolute;
+      text-align: center;
+      transform-origin: 50% 50% 0px;
+      color: rgb(76, 53, 122);
+      font-family: "Libre Baskerville";
+      left: 8px;
+      top: 396px;
+      height: 153.622px;
+      font-size: 54px;
+      width: 147.546px;
+      transform: translate3d(21px, 14px, 0px) rotateZ(-18.3371deg);
+      opacity: 0;
+    }
+    .gwd-span-f6qw {
+      position: absolute;
+      width: 542px;
+      text-align: center;
+      font-family: "Playfair Display";
+      transform-origin: 50% 50% 0px;
+      height: 30px;
+      left: 89px;
+      top: 1161px;
+      opacity: 0;
+    }
+    .gwd-span-17hi {
+      font-size: 28px;
+      line-height: 24px;
+      top: 21px;
+      font-weight: 500;
+    }
+    @keyframes gwd-gen-53elgwdanimation_gwd-keyframes {
+      0% {
+        top: 406px;
+        opacity: 0;
+        animation-timing-function: ease;
+      }
+      100% {
+        top: 83px;
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-53elgwdanimation {
+      animation: 1s linear 0.2s 1 normal forwards running gwd-gen-53elgwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-1010gwdanimation_gwd-keyframes {
+      0% {
+        top: 477px;
+        opacity: 0;
+        animation-timing-function: ease;
+      }
+      100% {
+        top: 297px;
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-1010gwdanimation {
+      animation: 1s linear 0.6s 1 normal forwards running gwd-gen-1010gwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-1uh6gwdanimation_gwd-keyframes {
+      0% {
+        top: 516px;
+        opacity: 0;
+        animation-timing-function: ease;
+      }
+      100% {
+        top: 328px;
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-1uh6gwdanimation {
+      animation: 1s linear 1s 1 normal forwards running gwd-gen-1uh6gwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-1sgmgwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: linear;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-1sgmgwdanimation {
+      animation: 0.8s linear 0.2s 1 normal forwards running gwd-gen-1sgmgwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-b5gwgwdanimation_gwd-keyframes {
+      0% {
+        transform: rotateZ(-91.24deg);
+        opacity: 0;
+        left: 206px;
+        animation-timing-function: ease;
+      }
+      100% {
+        transform: rotateZ(0deg);
+        opacity: 1;
+        left: 129px;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-b5gwgwdanimation {
+      animation: 0.8s linear 1.8s 1 normal forwards running gwd-gen-b5gwgwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-17a3gwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: ease;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-17a3gwdanimation {
+      animation: 0.6s linear 2s 1 normal forwards running gwd-gen-17a3gwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-15mvgwdanimation_gwd-keyframes {
+      0% {
+        top: 1304px;
+        mix-blend-mode: normal;
+        animation-timing-function: ease;
+      }
+      83.3333% {
+        top: 1070px;
+        mix-blend-mode: normal;
+        animation-timing-function: linear;
+      }
+      100% {
+        top: 1070px;
+        mix-blend-mode: normal;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-15mvgwdanimation {
+      animation: 1.2s linear 2.6s 1 normal forwards running gwd-gen-15mvgwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-1p8cgwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        animation-timing-function: ease;
+      }
+      100% {
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-1p8cgwdanimation {
+      animation: 0.8s linear 3s 1 normal forwards running gwd-gen-1p8cgwdanimation_gwd-keyframes;
+    }
+    .gwd-div-1002 {
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-76d3 {
+      width: 100%;
+      height: 100%;
+    }
+    @media (width: 720px) and (height: 1280px) {
+      .gwd-div-1002 {}
+      .gwd-span-17yz {
+        position: absolute;
+      }
+      .gwd-span-33hk {
+        position: absolute;
+      }
+      .gwd-span-185q {
+        position: absolute;
+      }
+      .gwd-image-jyoh {
+        position: absolute;
+      }
+      .gwd-span-f6qw {
+        position: absolute;
+      }
+      .gwd-image-1kpa {
+        height: 1280px;
+        width: 721px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .gwd-span-1hbg {
+        height: 30px;
+        width: 398px;
+        position: absolute;
+        left: 162px;
+        top: 46px;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic|Wix+Madefor+Display:regular,500,600,700,800|Libre+Baskerville:regular,italic,700" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="root">
-        <header>
-            <h1>Welcome to Webpack Inline Bundle</h1>
-            <img src="./assets/logo.png" alt="Logo" class="logo">
-        </header>
-        <main>
-            <p>This is a sample application where all assets are inlined into the HTML file.</p>
-            <button id="clickBtn" class="btn-primary">Click Me!</button>
-            <div id="output"></div>
-        </main>
-    </div>
+  <script gwd-served-sizes="" type="application/json">["720x1280"]</script>
+  <gwd-google-ad id="gwd-ad" polite-load="">
+    <gwd-metric-configuration></gwd-metric-configuration>
+    <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-76d3" data-gwd-width="100%" data-gwd-height="100%" data-gwd-animation-labels="label-1,2600">
+        <div class="gwd-page-content gwd-page-size gwd-div-1002">
+          <gwd-image id="bg_20" source="assets/bg 20.png" scaling="stretch" class="gwd-image-1kpa"></gwd-image>
+          <gwd-image id="Asset_50" source="assets/Asset 50.png" scaling="stretch" class="gwd-image-1w0s gwd-gen-b5gwgwdanimation"></gwd-image><span class="gwd-span-1hbg"><span class="gwd-span-k4q5">LOOK YOUNGER IN MINUTES</span><br></span><span class="gwd-span-17yz gwd-gen-53elgwdanimation"><span class="gwd-span-8lp8">Instant Neck<br>&amp; Jawline Lift</span><br></span><span class="gwd-span-33hk gwd-gen-17a3gwdanimation">70%<br>OFF</span><span class="gwd-span-185q gwd-gen-1010gwdanimation"><p data-start="128" data-end="205" class=""></p><span class="gwd-span-1dkf"><p data-start="128" data-end="205" class="gwd-p-15df"></p></span><span class="gwd-span-1h2b gwd-span-nuwg"><p data-start="128" data-end="205" class="gwd-p-15df">Clinically Designed for Visible Results</p></span>
+          <p data-start="207" data-end="260" class=""></p>
+          </span><span class="gwd-span-187u gwd-gen-1uh6gwdanimation"><p data-start="128" data-end="205" class=""></p><span class="gwd-span-1dkf"><p data-start="128" data-end="205" class="gwd-p-15df"></p></span><span class="gwd-span-1h2b"><p data-start="128" data-end="205" class="gwd-p-15df"><span class="gwd-span-1nn7">Boosts Collagen • Reduces Sagging • Tones Muscles</span><br></p>
+          </span>
+          <p data-start="207" data-end="260" class=""></p>
+          </span>
+          <gwd-image id="Produc0" source="assets/Produc0.png" scaling="stretch" class="gwd-image-jyoh gwd-gen-1sgmgwdanimation"></gwd-image>
+          <gwd-image id="Asset_60" source="assets/Asset 60.png" scaling="stretch" class="gwd-image-1fdb gwd-gen-15mvgwdanimation"></gwd-image><span class="gwd-span-f6qw gwd-gen-1p8cgwdanimation"><span class="gwd-span-8lp8 gwd-span-17hi">Invluding FREE SHIPPING</span><br></span>
+        </div>
+      </gwd-page>
+    </gwd-pagedeck>
+  </gwd-google-ad>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      var gwdAd = document.getElementById('gwd-ad');
+
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+      function handleDomContentLoaded(event) {
+
+      }
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        // Start the Ad lifecycle.
+        requestAnimationFrame(function() {
+          setTimeout(function() {
+            gwdAd.initAd();
+          }, 1);
+        });
+      }
+
+      /**
+       * Handles the event that is dispatched after the Ad has been
+       * initialized and before the default page of the Ad is shown.
+       */
+      function handleAdInitialized(event) {}
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+      window.addEventListener('adinitialized',
+        handleAdInitialized, false);
+    })();
+  </script>
 </body>
+
 </html>
